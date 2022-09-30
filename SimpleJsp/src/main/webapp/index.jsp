@@ -10,5 +10,7 @@
 	hello world
 	<br>
 	한글테스트
+	<br>
+	<%= new java.util.Date() %>
 </body>
 </html>
