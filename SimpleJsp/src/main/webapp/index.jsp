@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	hello world
+
+<%-- 	hello world
 	<br>
 	한글테스트
 	<br>
@@ -19,7 +20,16 @@
 			out.print("자바로 동적으로 만들어진 내용");
 			out.print("</h" +i + ">");
 		}
+	%> --%>
+	
+
+	<%
+	request.setCharacterEncoding("UTF-8");
+	String id = request.getParameter("id");
+	String name = request.getParameter("name");
+	out.println("<h3>"+name+"님 환영합니다."+"</h3>");
 	%>
+	
 	
 </body>
 </html>
