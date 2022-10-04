@@ -7,6 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	로그인성공 껍데기
+<%
+	String id = (String)session.getAttribute("id");
+	if(id ==null){
+		out.print("로그인 실패. 비밀번호가 틀렸습니다.");
+	}else{
+		out.print("로그인 성공\n");
+		out.print(session.getAttribute("name")+"님 환영합니다.");
+	}
+
+%>
 </body>
 </html>

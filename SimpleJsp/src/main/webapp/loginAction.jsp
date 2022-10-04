@@ -27,7 +27,7 @@ if(id.equals(realId)){
 		session.setAttribute("age", age);
 		response.sendRedirect("loginSuccess.jsp");
 	}else{	//아이디는 같은데 비번이 틀림
-		response.sendRedirect("loginForm.jsp");
+		response.sendRedirect("loginSuccess.jsp");
 	}
 }else{	//아이디부터 틀림
 	response.sendRedirect("loginForm.jsp");
