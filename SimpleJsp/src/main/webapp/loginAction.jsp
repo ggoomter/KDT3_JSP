@@ -27,9 +27,12 @@ if(id.equals(realId)){
 		session.setAttribute("age", age);
 		response.sendRedirect("loginSuccess.jsp");
 	}else{	//아이디는 같은데 비번이 틀림
+		//세션에 정보가 남아있으면 틀리게 작동될거고, 비어있으면 올바르게 작동
+		session.invalidate();
 		response.sendRedirect("loginSuccess.jsp");
 	}
 }else{	//아이디부터 틀림
+	session.invalidate();
 	response.sendRedirect("loginForm.jsp");
 }
 
