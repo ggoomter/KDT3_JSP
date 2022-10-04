@@ -8,5 +8,7 @@
 </head>
 <body>
 	20세이상이 볼 화면
+	
+	<%=	session.getAttribute("id")%>
 </body>
 </html>
