@@ -11,6 +11,8 @@
 <%!
 double result;
 %>
+<!-- html주석 -->
+<%-- jsp주석--%>
 <%
 request.setCharacterEncoding("UTF-8");
 int num1 = Integer.parseInt(request.getParameter("num1"));
@@ -18,6 +20,7 @@ int num2 = Integer.parseInt(request.getParameter("num2"));
 String operator = request.getParameter("operator");
 result=0.0;
 
+/* 자바, 자바스크립트주석 */
 switch(operator){
 	case "+":
 		result = num1+num2;
