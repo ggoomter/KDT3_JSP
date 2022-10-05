@@ -35,7 +35,7 @@
 	<div>비밀번호 : ${param.pw}</div>
 	<div>이름 : ${param.name}</div>
 	<div>나이 : ${param.age}</div>
-	
+	<div>내언어 : ${sessionScope.myPl}</div>
 	
 </body>
 </html>

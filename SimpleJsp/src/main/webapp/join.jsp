@@ -10,6 +10,10 @@
 <!-- 	id, pw, name, age
 	form 제출누르면 index.jsp로 가도록 폼을 완성해보세요.
  -->
+	<%
+	session.setAttribute("myPl", "자바");
+	%>
+ 
  	<form action="index.jsp" method="post">
  		ID : <input type="text" name="id">
  		<br>
@@ -21,6 +25,8 @@
  		<br>
  		<input type="submit" value="제출">
  	</form>
- 
+ 	
+
+ 	
 </body>
 </html>
