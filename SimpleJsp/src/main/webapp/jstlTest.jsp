@@ -20,8 +20,8 @@
 
 <c:set var="test2" value="테스트" scope="page"></c:set>
 
-<!-- 자바 정수의 값이 홀수면 html에 홀수를 빨간색으로 보여주고
-             짝수면 html에 짝수를 파란색으로 보여줘보세요. -->
+<!-- 문제1 : 자바 정수의 값이 홀수면 html에 홀수를 빨간색으로 보여주고
+                         짝수면 html에 짝수를 파란색으로 보여줘보세요. -->
 <c:set var="num" value="24"></c:set>
 <c:if test="${num%2==1}">
 	<span style="color:red;">홀수</span>
@@ -29,6 +29,14 @@
 <c:if test="${num%2==0}">
 	<span style="color:blue;">짝수</span>
 </c:if>
+
+<c:forEach var="k" begin="1" end="50" step="1">
+	<c:out value="${k}"></c:out>
+</c:forEach>
+<!-- 문제2 : 1부터 100까지의 3의배수만 -->
+<%-- <c:forEach var="k" begin="3" end="100" step="3">
+	<c:out value="${k}"></c:out>
+</c:forEach> --%>
 
 </body>
 </html>
