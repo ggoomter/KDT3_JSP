@@ -44,11 +44,12 @@
 						그밖에 모든것이 저장되어있으면 span에 그 이름을 표현해주세요. -->
 <c:set var="userType" value="ggoomter"></c:set>
 <c:choose>
-	<c:when test="${userType=='admin'}">
+	<c:when test="${userType =='admin'}">
 		<span>관리자</span>
 	</c:when>
 	<c:when test="${userType!='admin'}">
-		<span><c:out value="${userType}"></c:out></span>
+		<span><c:out value="${userType}"></c:out></span>	<!-- 표현언어. EL -->
+		<%=pageContext.getAttribute("userType") %>	<!-- 표현식 %= -->
 	</c:when>
 </c:choose>
 
