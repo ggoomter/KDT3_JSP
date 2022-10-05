@@ -30,6 +30,12 @@
 	out.println("<h3>"+name+"님 환영합니다."+"</h3>");
 	%>
 	
+	<%-- el표기법으로 HTML에서 바로 출력해보기.   ${값} --%>
+	<div>아이디 : ${param.id}</div>		<!-- page.getParameter("id")를 보고 없으면 request, session, application -->
+	<div>비밀번호 : ${param.pw}</div>
+	<div>이름 : ${param.name}</div>
+	<div>나이 : ${param.age}</div>
+	
 	
 </body>
 </html>

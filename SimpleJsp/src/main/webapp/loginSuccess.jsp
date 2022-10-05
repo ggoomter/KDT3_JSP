@@ -9,6 +9,7 @@
 <body>
 <%
 	String id = (String)session.getAttribute("id");
+	/* el표기법으로 변경 */
 	if(id ==null){
 		out.print("로그인 실패. 비밀번호가 틀렸습니다.");
 	}else{

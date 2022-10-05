@@ -53,5 +53,16 @@
 	</c:when>
 </c:choose>
 
+<!-- El이 없었을때의 상황 -->
+<%
+String userId = request.getParameter("userId");
+%>
+<input type="text" value= <%= userId %>  >
+
+<!-- EL이 생기고의 상황 -->
+<input type="text" value="${param.userId}">
+<!-- page, request, session, application 을 확장해나가면서 내부적으로 getPameter호출 -->
+
+
 </body>
 </html>
