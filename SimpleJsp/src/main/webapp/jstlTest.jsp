@@ -38,5 +38,19 @@
 	<c:out value="${k}"></c:out>
 </c:forEach> --%>
 
+
+
+<!-- userType이라는 문자열변수에 admin이 저장되어있으면 span에 "관리자" 라고 표현하고
+						그밖에 모든것이 저장되어있으면 span에 그 이름을 표현해주세요. -->
+<c:set var="userType" value="ggoomter"></c:set>
+<c:choose>
+	<c:when test="${userType=='admin'}">
+		<span>관리자</span>
+	</c:when>
+	<c:when test="${userType!='admin'}">
+		<span><c:out value="${userType}"></c:out></span>
+	</c:when>
+</c:choose>
+
 </body>
 </html>
